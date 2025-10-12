@@ -1,0 +1,141 @@
+
+
+
+/* FOOTER SECTION */
+.footer {
+  /* background-color: #1b5e20; */
+  background: linear-gradient(to bottom right, #e8f5e9, #f1f8e9);
+  /* background-color: #648069; */
+  color: #ffffff;
+  padding: 48px 20px 0;
+  font-family: "Poppins", sans-serif;
+  margin-top: 60px;
+
+  
+}
+
+/* Grid Layout */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.footer h2,
+.footer h3 {
+  color: #005818;
+  margin-bottom: 15px;
+}
+.footer h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logo-footer{
+  width: 40px;
+  
+}
+.footer-about p {
+  color: #3c6041;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 36ch;
+}
+
+/* Quick Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #313b33;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: whitesmoke;
+}
+
+/* Contact Info */
+.footer-contact p {
+  margin: 6px 0;
+  color: #003211;
+}
+
+/* Social Links */
+.footer-social .social-icons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  /* filter: brightness(0) invert(1); */
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Bottom Section */
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 40px;
+  border-top: 1px solid #4caf50;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+
+/* ✅ RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 16px 28px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+
+  .footer-about h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 28px 12px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .footer-about p {
+    margin: 0 auto 8px;
+  }
+
+  .footer-social .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.82rem;
+  }
+}

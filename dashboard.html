@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="rsc/home-rse/farmer.svg" type="image/png">
+
+    <title>AgroSmart</title>
+    <link rel="stylesheet" href="styles-fdr/header.css">
+    <link rel="stylesheet" href="styles-fdr/dashboard.css">
+    <link rel="stylesheet" href="styles-fdr/footer.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="navbar container" aria-label="Primary">
+            <div class="logo">
+                <img src="rsc/home-rse/farmer.svg" alt="logo" id="logo">
+                <h1>AgroSmart</h1>
+            </div>
+
+
+            
+
+            <!-- <div class="nav-links" id="primary-navigation">
+                <div class="nav-items">
+                    <a href="/index.html#home">Home</a>
+                    <a href="/index.html#mission">About</a>
+                    <a href="#footer">Contact</a>
+                </div> -->
+
+                <div class="auth-buttons">
+                    <a href="index.html"><button class="login">Home</button></a>
+                </div>
+
+            </div>
+            <!-- Hamburger / menu toggle for small screens -->
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Hello, USER 👋 </h2>
+            <h3>Ready to find the best crop for your soil?</h3>
+            <p>Check your soil conditions and let AI recommend the perfect crop for you.</p>
+        </section>
+
+        <section class="input-form">
+            <form id="cropForm">
+            <div>
+                <label for="nitrogen">Nitrogen (N)</label>
+                <input type="number" id="nitrogen" placeholder="Enter N value">
+            </div>
+            <div>
+                <label for="phosphorus">Phosphorus (P)</label>
+                <input type="number" id="phosphorus" placeholder="Enter P value">
+            </div>
+            <div>
+                <label for="potassium">Potassium (K)</label>
+                <input type="number" id="potassium" placeholder="Enter K value">
+            </div>
+            <div>
+                <label for="ph">pH</label>
+                <input type="number" id="ph" placeholder="Enter soil pH" step="0.1">
+            </div>
+            <div>
+                <label for="temperature">Temperature</label>
+                <input type="number" id="temperature" placeholder="in °C">
+            </div>
+            <div>
+                <label for="humidity">Humidity</label>
+                <input type="number" id="humidity" placeholder="in %">
+            </div>
+            <div class="full-width">
+                <label for="rainfall">Rainfall</label>
+                <input type="number" id="rainfall" placeholder="in mm">
+            </div>
+            <a href="#resultCard"><button type="submit">Predict Crop</button></a>
+            <a href="#cropForm"><button type="button" id="resetBtn">Reset</button></a>
+            </form>
+        </section>
+
+        <section class="result-section" id="result">
+            <div class="border-result">
+            <h3 class="result-h3">Predicted Crop Result</h3>
+            <div class="result-card" id="resultCard">
+                <p>Result will appear here after prediction...</p>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer" id="footer">
+        <div>
+            <div class="footer-container">
+
+                <!-- Logo & Description -->
+                <div class="footer-about">
+                    <h2><div class="logo"><img src="rsc/home-rse/farmer.svg" alt="logo" id="logo-footer"></div> AgroSmart</h2>
+                    <p>
+                        Empowering farmers with AI-driven crop recommendations to
+                        increase yield, save resources, and promote sustainable farming.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p>📧 support@agrosmart.ai</p>
+                    <p>📞 +91 98*** ***10</p>
+                    <p>📍 Bengaluru, India</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="rsc/home-rse/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="rsc/home-rse/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="rsc/home-rse/linkedin.svg" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 AgroSmart | Designed with 🌿 by Team AgroTech</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script_fdr/script.js"></script>
+    <script src="script_fdr/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #648069;
+
+}
+html{
+
+  scroll-behavior: smooth;
+
+}
+
+
+main {
+    position: relative;
+    top: 100px;
+
+
+}
+
+
+
+
+.hero-img {
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+}
+
+#home_image {
+    width: 100%;
+    height: min(65vh, 640px);
+
+
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.glass-box {
+    position: absolute;
+
+    top: -10px;
+    max-width: 1100px;
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    backdrop-filter:blur(6px);
+
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    filter: saturate(150%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content {
+
+    color: #ffffff;
+
+    text-shadow: 2px 2px 4px #001604;
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.p-content {
+    margin-top: 20px;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: #bde2b8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px 2px #000000;
+    width: 60%;
+    text-align: center;
+
+}
+
+
+.home-section {
+    position: relative;
+    min-height: 70vh;
+
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small screens: stack hero image and content */
+@media (max-width: 900px) {
+    .hero-img {
+        position: relative;
+        pointer-events: auto;
+    }
+
+    #home_image {
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    .glass-box {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        width: 92%;
+        margin: 12px auto;
+        padding: 20px;
+    }
+
+    .p-content {
+        width: 92%;
+    }
+
+    .content {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #home_image {
+        height: 36vh;
+    }
+
+    .content {
+        font-size: 1.25rem;
+    }
+
+    .p-content {
+        font-size: 1rem;
+    }
+
+    .get-started-btn {
+        padding: 8px 14px;
+    }
+
+    /* Reorder navbar children so hamburger appears after auth buttons */
+    .logo {
+        order: 0;
+    }
+
+    .nav-links {
+        order: 1;
+    }
+
+    .auth-buttons {
+        order: 2;
+    }
+
+    .menu-toggle {
+        order: 3;
+    }
+}
+
+.get-started-btn {
+    margin: 30px 0;
+    padding: 10px 20px;
+    background-color: rgb(0, 51, 22);
+    border: none;
+    
+    min-width: 150px;
+    /* transform: scaleX(2); */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out,transform 100ms ease-in-out;
+}
+
+.get-started-btn:hover {
+
+    background-color: #d1f3d3;
+
+    transform: translateY(-2px);
+
+}
+
+.get-started-btn p {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.btn-get-started button{
+    color: white;
+    transition: color 200ms ease-in-out;
+}
+.btn-get-started button:hover{
+
+    color: rgb(0, 51, 22);
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    align-items: center;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: contents;
+
+}
+
+.features li {
+    background: rgba(0, 100, 0, 0.4);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+@media (max-width: 600px) {
+    .features-list {
+        padding: 10px;
+        max-width: none;
+        justify-content: center;
+    }
+
+    .features li {
+        font-size: 1rem;
+        padding: 14px 16px;
+    }
+}
+
+
+
+.why-choose-section {
+
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.choose-description {
+
+    padding: 20px;
+    width: 100%;
+
+    border-radius: 15px;
+    color: #fff;
+
+}
+
+.des-h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.des-p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.choose-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.choose {
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    width: 300px;
+    color: black;
+}
+
+.img-choose {
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+
+.choose h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.choose p {
+    font-size: 1rem;
+    text-align: start;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mission-section {
+    background-color: #fff;
+    padding: 48px 20px;
+    height: fit-content;
+    box-shadow: 0 0 5px 1px rgb(0, 36, 0);
+    margin-bottom: 6px;
+
+}
+
+.mission-content {
+    border: 2px double #96a298;
+    border-radius: 14px;
+    padding: 24px;
+    height: fit-content;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mission-content h2 {
+    font-size: 2rem;
+    text-align: start;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mission-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 80%;
+
+    color: rgb(73, 69, 69);
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mission-goals {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    align-items: center;
+
+
+}
+
+.goal {
+    border-radius: 15px;
+    background-color: rgb(241, 255, 246);
+    border: 2px solid #000000;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: fit-content;
+
+}
+
+.goal h3 {
+    font-size: 1.2rem;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.goal p {
+    font-size: 1rem;
+    color: rgb(73, 69, 69);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* adjust for smaller screens */
+@media (max-width: 900px) {
+    .mission-section {
+        padding: 32px 12px;
+    }
+
+    .mission-content {
+        padding: 18px;
+        width: 94%;
+    }
+
+    .mission-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .mission-content p {
+        width: 100%;
+        font-size: 0.98rem;
+    }
+
+    .goal {
+        min-height: auto;
+        padding: 12px;
+    }
+}
+
+/* ensure there's spacing from fixed header on mid widths where overlap occurred */
+@media (min-width: 900px) and (max-width: 1100px) {
+    .mission-section {
+        padding-top: 84px;
+    }
+}
+@media (max-width: 400px) {
+    .mission-goals{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 70px 20px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+
+  background: linear-gradient(to bottom right, #e8f5e9, rgb(241, 248, 233));
+  font-family: "Poppins", sans-serif;
+
+  box-shadow: -15px 0 20px rgb(241, 248, 233);
+  
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-section .subheading {
+  color: #4b6043;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* CONTACT CARDS */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #c8e6c9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.2);
+}
+
+.card h3 {
+  color: #1b5e20;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #2e2e2e;
+  font-size: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+

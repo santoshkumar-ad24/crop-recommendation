@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #648069;
+
+    /* background: linear-gradient(to bottom right, #e8f5e9, #f1f8e9) */
+    /* scroll-behavior: smooth; */
+
+}
+
+html {
+    /* scroll-snap-type: y mandatory; */
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* .welcome{
+    position: relative;
+    top: 100px;
+} */
+/* main{
+    position: relative;
+    top: 200px;
+} */
+
+main {
+    position: relative;
+    padding-top: 100px;
+    width: 100%;
+    /* min-height: calc(100vh - 140px); */
+}
+
+.welcome {
+    width: 88%;
+    max-width: 980px;
+    border-radius: 15px;
+    border: 2px solid green;
+    margin: 10px auto;
+    margin-bottom: 3px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+.welcome h2 {
+    /* text-align: center; */
+    font-size: 2.5rem;
+    color: green;
+    font-family: cursive;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.welcome h3 {
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media (max-width:600px) {
+    .welcome p {
+        font-size: 0.9rem;
+    }
+
+    .welcome h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* Input Form Section */
+#cropForm {
+    background: linear-gradient(180deg, #ffffff, #fbfbfb);
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 4px 1px 5px 2px rgb(7, 49, 14);
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 88%;
+    max-width: 980px;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    overflow: visible;
+}
+
+/* Decorative accent stripe */
+#cropForm::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    border-radius: 14px 0 0 14px;
+    background: linear-gradient(180deg, #0b6b2e, #0a5a27);
+}
+
+#cropForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #12381f;
+}
+
+.input-form input,
+.input-form select,
+.input-form textarea {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    background: #fff;
+    transition: box-shadow 120ms, border-color 120ms;
+}
+
+.input-form input:focus,
+.input-form textarea:focus,
+.input-form select:focus {
+    outline: none;
+    border-color: #0b6b2e;
+    box-shadow: 0 6px 18px rgba(11, 107, 46, 0.08);
+}
+
+.input-form .full-width {
+    grid-column: 1 / -1;
+}
+
+.input-form .actions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input-form button {
+    background: linear-gradient(180deg, #0b6b2e, #0a5a27);
+    color: white;
+    border: none;
+    padding: 0.9rem 1.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.input-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(11, 107, 46, 0.18);
+}
+
+/* Responsive: stack to one column on narrow screens */
+@media (max-width: 800px) {
+    .input-form {
+        grid-template-columns: 1fr;
+        width: 94%;
+    }
+
+    .input-form .actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-form {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .input-form::before {
+        width: 4px;
+        border-radius: 12px 0 0 12px;
+    }
+
+    .input-form input {
+        padding: 0.6rem;
+    }
+    #cropForm {
+        width: 96%;
+        padding: 1rem;
+        border-radius: 12px;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Results grid for predicted crops */
+.result-section {
+    display: grid;
+
+     background: linear-gradient(to bottom right, #e8f5e9, #f1f8e9);
+    gap: 10px;
+    margin-top: 18px;
+    padding: 10px 20px;
+
+    border-radius: 15px;
+    margin-bottom: -80px;
+    border-bottom: 2px solid green;
+    width: 100%;
+}
+
+/* .sec */
+.result-h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #003712;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    /* margin-bottom: 10px; */
+    padding: 0 20px 20px 20px;
+    border-bottom: 2px solid #00ff2f;
+    border-radius: 15px;
+
+}
+.result-card{
+    display: flex;
+    
+    column-gap: 100px;
+    row-gap: 30px;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid #00d5ff;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.result-card p {
+    padding: 0 20px;
+    font-size: 1.3rem;
+    color: #496454;
+    
+    text-align: center;
+    font-family: cursive
+}
+
+.border-result {
+    border: 1px double green;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #dbffe3;
+    /* max-width: 600px; */
+    margin: 0 auto;
+   
+    min-width: 90%;
+    
+}
+
+.crop-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 2px double green;
+    box-shadow: 0 4px 10px rgb(0, 55, 13);
+    max-width: 300px;
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    /* gap: 0; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    /* width: 400px; */
+}
+
+.crop-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+}
+
+.crop-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.crop-card .card-body {
+    padding: 0 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* background-color: red; */
+}
+
+.crop-card h3 {
+    margin: 0;
+    /* padding: 0; */
+    font-size: 2rem;
+    color: #0b662e;
+}
+
+.crop-card p {
+    margin: 0;
+    color: #444;
+    font-size: 0.95rem;
+    text-align: left;
+}
+.crop-card b {
+    color: black;
+}
+
+.confidence {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.confidence .badge {
+    background: linear-gradient(180deg, #0b6b2e, #087023);
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.confidence .bar {
+    flex: 1;
+    height: 10px;
+    background: #e6e6e6;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.confidence .bar>i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #8bd06b, #0b6b2e);
+    width: 0%;
+}
+
+@media (max-width: 600px) {
+    .crop-card img {
+        height: 120px;
+    }
+
+    .results-grid {
+        gap: 12px;
+    }
+}
+
+
+
+
+
+/* remove old duplicate result-card / crop-card rules and keep modern responsive styles above */
+/* The responsive .results-grid + .crop-card rules at the top of this file are the canonical styles. */

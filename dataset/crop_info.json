@@ -1,0 +1,156 @@
+{
+  "apple": {
+    "desc": "The apple, a crisp and juicy fruit, is a popular choice. It offers sweetness and a good source of fiber and vitamins.",
+    "price": "₹150-₹300",
+    "season": "Zaid",
+    "tips": "Ensure proper drainage and choose disease-resistant varieties for better yields.",
+    "image": "rsc/image-crop/apple.jpg"
+  },
+  "banana": {
+    "desc": "Banana is a tropical fruit, a rich source of potassium and energy. It is widely consumed and cultivated across India, enjoyed for its sweet taste.",
+    "price": "₹30-₹60",
+    "season": "Kharif",
+    "tips": "Use well-drained soil; provide sufficient irrigation, especially during dry periods. Employ proper weed control.",
+    "image": "rsc/image-crop/banana.jpg"
+  },
+  "blackgram": {
+    "desc": "Blackgram, also known as urad dal, is a legume widely consumed in India. It is a rich source of protein, fiber, and essential nutrients, used in various culinary dishes.",
+    "price": "₹90 - ₹120",
+    "season": "Kharif",
+    "tips": "Ensure proper drainage to prevent waterlogging and consider intercropping with compatible crops for added benefits.",
+    "image": "rsc/image-crop/blackgram.jpg"
+  },
+  "chickpea": {
+    "desc": "Chickpea, a nutrient-rich legume, is a staple in Indian cuisine. It's a versatile ingredient used in various dishes, providing protein and fiber.",
+    "price": "₹75-₹95",
+    "season": "Rabi",
+    "tips": "Ensure proper drainage and treat seeds with bio-agents to protect against soil-borne diseases.",
+    "image": "rsc/image-crop/chickpea.jpg"
+  },
+  "coconut": {
+    "desc": "Coconut, a tropical fruit, is known for its versatile uses, from food and drink to oil and fiber. It's a staple in many cuisines and cultures.",
+    "price": "₹30-₹50",
+    "season": "Kharif",
+    "tips": "Ensure proper drainage to prevent root rot. Practice intercropping with suitable plants to enhance yield.",
+    "image": "rsc/image-crop/coconut.jpg"
+  },
+  "coffee": {
+    "desc": "Coffee is a brewed drink prepared from roasted coffee beans. India produces both Arabica and Robusta varieties, popular for their unique flavor profiles.",
+    "price": "₹450-₹800",
+    "season": "Kharif",
+    "tips": "Ensure proper drainage and use organic fertilizers to enhance soil fertility and yield.",
+    "image": "rsc/image-crop/coffee.jpg"
+  },
+  "cotton": {
+    "desc": "Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around the seeds of the cotton plants. It's used to make textiles.",
+    "price": "60-75",
+    "season": "Kharif",
+    "tips": "Ensure proper soil drainage and timely pest control for optimal yield. Consider using Bt cotton varieties for insect resistance.",
+    "image": "rsc/image-crop/cotton.jpg"
+  },
+  "grapes": {
+    "desc": "Grapes, a delicious fruit, are cultivated for their juicy pulp and are used in various products. They come in different colors, flavors, and seed types.",
+    "price": "₹100-₹250",
+    "season": "Rabi",
+    "tips": "Ensure proper sunlight and drainage. Provide timely irrigation, especially during fruit development.",
+    "image": "rsc/image-crop/grapes.jpg"
+  },
+  "jute": {
+    "desc": "Jute, a natural fiber, is primarily used to make burlap, sacks, and ropes. It's known for its strength, breathability, and biodegradability.",
+    "price": "₹60 - ₹75",
+    "season": "Kharif",
+    "tips": "Ensure proper drainage to prevent waterlogging. Timely weeding and pest control are crucial for a good yield.",
+    "image": "rsc/image-crop/jute.jpg"
+  },
+  "kidneybeans": {
+    "desc": "Kidney beans are a staple legume, known for their kidney-like shape and rich, earthy flavor, widely used in Indian cuisine for curries and salads.",
+    "price": "₹80 - ₹120",
+    "season": "Kharif",
+    "tips": "Ensure proper drainage to prevent root rot. Apply balanced fertilizers for optimal yield and plant health.",
+    "image": "rsc/image-crop/kidneybeans.jpg"
+  },
+  "lentil": {
+    "desc": "Lentils are small, lens-shaped pulses, a nutritional powerhouse, widely used in Indian cuisine for soups, stews, and dals. High in protein and fiber.",
+    "price": "₹80 - ₹120",
+    "season": "Rabi",
+    "tips": "Ensure proper soil drainage and use disease-resistant varieties to minimize crop loss.",
+    "image": "rsc/image-crop/lentil.jpg"
+  },
+  "maize": {
+    "desc": "Maize, a cereal grain, is widely cultivated and consumed in India. It serves as a staple food, animal feed, and a source for various industrial products.",
+    "price": "₹22 - ₹28",
+    "season": "Kharif",
+    "tips": "Use certified seeds and practice timely weed control for optimal yields.",
+    "image": "rsc/image-crop/maize.jpg"
+  },
+  "mango": {
+    "desc": "Mango, a tropical fruit, is a juicy and sweet delight. Known as the 'king of fruits,' it's a popular choice for various culinary uses and direct consumption.",
+    "price": "₹60 - ₹120",
+    "season": "Summer (Zaid)",
+    "tips": "Control pests with organic methods and ensure proper irrigation to maximize fruit quality and yield.",
+    "image": "rsc/image-crop/mango.jpg"
+  },
+  "mothbeans": {
+    "desc": "Moth beans, a drought-resistant legume, are commonly grown in arid regions of India for their nutritious seeds and fodder.",
+    "price": "₹60-₹100",
+    "season": "Kharif",
+    "tips": "Use well-drained soil and inoculate seeds with Rhizobium for better nitrogen fixation.",
+    "image": "rsc/image-crop/mothbeans.jpg"
+  },
+  "mungbean": {
+    "desc": "Mungbean, a versatile legume, is a key source of protein and nutrients. It's cultivated for its edible seeds and sprouts, used in diverse Indian cuisine.",
+    "price": "₹80-₹120",
+    "season": "Kharif and Rabi",
+    "tips": "Choose well-draining soil & treat seeds with bio-agents to prevent fungal diseases.  Ensure proper irrigation based on soil moisture levels.",
+    "image": "rsc/image-crop/mungbean.jpg"
+  },
+  "muskmelon": {
+    "desc": "Muskmelon, a sweet and juicy fruit, is a popular summer treat. It is known for its refreshing taste and various health benefits, especially in hot climates.",
+    "price": "₹30-60",
+    "season": "Zaid",
+    "tips": "Provide well-drained soil and consistent watering. Use organic mulch to retain moisture and suppress weeds.",
+    "image": "rsc/image-crop/muskmelon.jpg"
+  },
+  "orange": {
+    "desc": "Oranges, a citrus fruit, are known for their sweet and tangy taste. They are rich in Vitamin C and are commonly consumed as juice or eaten fresh.",
+    "price": "₹60-₹100",
+    "season": "Rabi",
+    "tips": "Provide adequate irrigation and ensure proper drainage to prevent root rot. Protect from pests and diseases with timely treatments.",
+    "image": "rsc/image-crop/orange.jpg"
+  },
+  "papaya": {
+    "desc": "Papaya is a tropical fruit with sweet, orange flesh, known for its health benefits and ease of cultivation, commonly consumed raw or in salads.",
+    "price": "₹30-₹50",
+    "season": "Kharif",
+    "tips": "Provide well-drained soil and ensure adequate irrigation, especially during fruiting. Protect young plants from strong winds.",
+    "image": "rsc/image-crop/papaya.jpg"
+  },
+  "pigeonpeas": {
+    "desc": "Pigeonpeas, also known as arhar dal, is a drought-resistant legume widely consumed in India, used in dals and various dishes.",
+    "price": "₹80-₹120",
+    "season": "Kharif",
+    "tips": "Use certified seeds & practice intercropping for yield benefits. Implement timely pest and disease management.",
+    "image": "rsc/image-crop/pigeonpeas.jpg"
+  },
+  "pomegranate": {
+    "desc": "Pomegranate, a nutrient-rich fruit, boasts vibrant red seeds, offering a sweet-tart flavor. It's popular in India for its health benefits and diverse culinary uses.",
+    "price": "₹100-₹250",
+    "season": "Kharif",
+    "tips": "Ensure proper irrigation and drainage. Apply organic fertilizers to enhance fruit quality and yield.",
+    "image": "rsc/image-crop/pomegranate.jpg"
+  },
+  "rice": {
+    "desc": "Rice, a staple food in India, is a cereal grain widely consumed. Various varieties exist, differing in size, shape, and aroma, essential for Indian cuisine.",
+    "price": "₹35-₹75",
+    "season": "Kharif",
+    "tips": "Ensure proper irrigation and drainage. Control weeds and pests through timely interventions.",
+    "image": "rsc/image-crop/rice.jpg"
+  },
+  "watermelon": {
+    "desc": "Watermelon is a refreshing summer fruit, primarily composed of water, known for its sweet taste and vibrant red flesh, popular in India for its hydrating qualities.",
+    "price": "₹15-₹40",
+    "season": "Zaid",
+    "tips": "Use well-drained soil and provide ample sunlight. Monitor for pests like aphids and fruit flies.",
+    "image": "rsc/image-crop/watermelon.jpg"
+  }
+}
