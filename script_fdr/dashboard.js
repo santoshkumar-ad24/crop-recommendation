@@ -101,7 +101,7 @@ document.getElementById("cropForm").addEventListener("submit", async (e) => {
     // 3. Load crop info JSON (optional) - fail gracefully if not present
     let cropInfo = {};
     try {
-      const infoRes = await fetch("./dataset/crop_info.json");
+      const infoRes = await fetch("dataset/crop_info.json");
       if (infoRes.ok) cropInfo = await infoRes.json();
     } catch (e) {
       // ignore, we'll show basic results

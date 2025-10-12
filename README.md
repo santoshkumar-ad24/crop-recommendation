@@ -51,7 +51,7 @@ git clone https://github.com/username/crop-recommendation-system.git
 python app.py
 ```
 
-4. Open the frontend in a browser (index.html)
+4. Open the frontend in a browser http://127.0.0.1:5000
 
 - **Usage**
 1. Open the landing page.

@@ -4,6 +4,8 @@ import joblib
 import numpy as np
 import os
 import logging
+from flask import send_from_directory
+
 
 app = Flask(__name__)
 CORS(app)
@@ -106,6 +108,13 @@ def predict_crop():
     except Exception as e:
         logger.exception('Prediction failed')
         return jsonify({'error': f'Prediction failed: {str(e)}'}), 500
+@app.route('/')
+def serve_index():
+    return send_from_directory('.', 'index.html')
+
+@app.route('/<path:path>')
+def serve_static_files(path):
+    return send_from_directory('.', path)
 
 
 if __name__ == "__main__":
