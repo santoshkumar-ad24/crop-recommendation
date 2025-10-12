@@ -16,7 +16,7 @@ IMAGE_API_KEY = os.getenv("IMG_API_KEY")
 
 # 🌱 Paths
 DATASET_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__),'..', 'dataset', 'Crop_recommendation.csv'))
-OUTPUT_JSON = os.path.abspath(os.path.join(os.path.dirname(__file__),'..', 'dataset', 'cropss_info.json'))
+OUTPUT_JSON = os.path.abspath(os.path.join(os.path.dirname(__file__),'..', 'dataset', 'crop_info.json'))
 IMAGE_FOLDER = 'rsc/image-crop'
 
 # -------------------------------
