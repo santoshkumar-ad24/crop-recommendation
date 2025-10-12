@@ -1,0 +1,6 @@
+{
+  "model_path": "c:\\Users\\santo\\OneDrive\\Desktop\\New folder\\crop\\model\\crop_model.pkl",
+  "label_encoder": "c:\\Users\\santo\\OneDrive\\Desktop\\New folder\\crop\\model\\label_encoder.pkl",
+  "accuracy": 0.990909090909091,
+  "balanced_accuracy": 0.990909090909091
+}
