@@ -52,6 +52,8 @@ main {
     max-width: 1100px;
     width: 85%;
     height: 100%;
+    
+     
     overflow: hidden;
 
     padding: 30px;
@@ -60,11 +62,12 @@ main {
     backdrop-filter:blur(6px);
 
     border: 1px solid rgba(255, 255, 255, 0.28);
-    filter: saturate(150%);
+    filter: saturate(160%);
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -87,7 +90,7 @@ main {
     text-shadow: 1px 1px 2px #000000;
     width: 60%;
     text-align: center;
-
+    
 }
 
 
@@ -169,11 +172,11 @@ main {
 }
 
 .get-started-btn {
-    margin: 30px 0;
+    /* margin: 30px 0; */
     padding: 10px 20px;
     background-color: rgb(0, 51, 22);
     border: none;
-    
+    height: fit-content;
     min-width: 150px;
     /* transform: scaleX(2); */
     border-radius: 8px;
@@ -195,6 +198,9 @@ main {
     font-size: 1.2rem;
     font-weight: bold;
 
+}
+.btn-get-started{
+    margin: 30px 0;
 }
 .btn-get-started button{
     color: white;

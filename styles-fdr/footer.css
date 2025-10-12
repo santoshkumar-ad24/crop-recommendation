@@ -62,7 +62,7 @@
 }
 
 .footer-links a:hover {
-  color: whitesmoke;
+  color: rgb(77, 255, 0);
 }
 
 /* Contact Info */
@@ -92,11 +92,15 @@
 /* Bottom Section */
 .footer-bottom {
   text-align: center;
-  padding-top: 25px;
-  margin-top: 40px;
-  border-top: 1px solid #4caf50;
+  padding-top: 15px;
+  margin-top: 30px;
+  
+  border-top: 1px solid #0fab14;
   font-size: 0.9rem;
-  color: #ffffff;
+  color: #0a3112;
+}
+.footer-bottom p{
+  padding-bottom: 10px;
 }
 
 
