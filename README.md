@@ -38,12 +38,12 @@ A **web application** that recommends crops to farmers based on soil and environ
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/username/crop-recommendation-system.git
+https://github.com/santoshkumar-ad24/crop-recommendation.git
 ```
 
 2. Navigate into the project folder:
    ```bash
-   cd crop-recommendation-system
+   cd crop-recommendation
     ```
 
 3. python app.py
