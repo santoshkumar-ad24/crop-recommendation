@@ -38,7 +38,7 @@ A **web application** that recommends crops to farmers based on soil and environ
 1. Clone the repository:
 
 ```bash
-https://github.com/santoshkumar-ad24/crop-recommendation.git
+git clone https://github.com/santoshkumar-ad24/crop-recommendation.git
 ```
 
 2. Navigate into the project folder:
